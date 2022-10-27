@@ -11,9 +11,9 @@ For Tensorflow version, please click [here](https://github.com/THUMLP/TensorGCN)
 # Reproduing Results
 ## Build three graphs
 
-`python build_graph.py --gen_seq --gen_sem --gen_syn --dataset [dataset name]`
+`python build_graph.py --gen_seq --gen_sem --gen_syn --dataset [dataset name] --corenlp [path]`
 
-Here, [dataset name] could be 20ng, R8, R52, mr, ohsumed. You can also try your own dataset by processing your data similar to the data provided.
+Here, [dataset name] could be 20ng, R8, R52, mr, ohsumed. You can also try your own dataset by processing your data similar to the data provided. [path] is the path of StanfordCoreNLP you installed.
 ## Training and Evaluating
 
 `python train.py --do_train --do_valid --do_test --dataset [dataset name]`
