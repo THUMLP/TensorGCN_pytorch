@@ -54,6 +54,7 @@ def parse_args(args=None):
     parser.add_argument("--weight_decay", default=1e-6, type=float)
     parser.add_argument("--epochs", default=20, type=int)
     parser.add_argument("--seed", default=32, type=int)
+    parser.add_argument("--corenlp", default='./stanford-corenlp-4.5.0', type=int)
     parser.add_argument('--thres', default=0.05, type=float, help="the threshold of semantic graph")
     return parser.parse_args(args)
 
@@ -504,7 +505,7 @@ def gen_corpus(dataset):
 
 def main(args):
     # load stanfordcorenlp
-    nlp = StanfordCoreNLP('./stanford-corenlp-4.5.0', lang='en')
+    nlp = StanfordCoreNLP(args.corenlp, lang='en')
     seed=148
     print(seed)
     random.seed(seed)
