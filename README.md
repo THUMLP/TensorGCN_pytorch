@@ -1,5 +1,6 @@
 # TensorGCN_pytorch
 A pytorch version implementation of TensorGCN in paper:
+
 Liu X, You X, Zhang X, et al. Tensor graph convolutional networks for text classification[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2020, 34(05): 8409-8416.
 
 For Tensorflow version, please click [here](https://github.com/THUMLP/TensorGCN).
